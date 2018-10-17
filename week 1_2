@@ -1,0 +1,224 @@
+#include "pch.h"
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	//int c;
+	//double f;
+	//cout << "c=";
+	//cin >> c;
+	//f = c * 1.8 + 32;
+	//cout << "f=" << f << endl << endl << endl;
+
+
+	//double c, f;
+	//cout << "f=";
+	//cin >> f;
+	//c = (f - 32) / 1.8;
+	//cout << "c=" << c << endl << endl << endl;
+
+	//double ce, k;
+	//cout << "ce=";
+	//cin >> ce;
+	//k = ce + 273.15;
+	//cout << "k=" << k << endl << endl << endl;
+
+
+	/*cout <<"int="<< sizeof(int)<<endl;
+	cout <<"long int="<< sizeof(long int)<<endl;
+	cout <<"long long int="<< sizeof(long long int)<<endl;
+	cout <<"double="<< sizeof(double)<<endl;
+	cout <<"char="<< sizeof(char)<<endl;
+	cout <<"short="<< sizeof(short)<<endl;
+	cout <<"unsigned char="<< sizeof(unsigned char)<<endl;
+	cout <<"unsigned short="<< sizeof(unsigned short)<<endl;
+	cout <<"long="<< sizeof(long)<<endl;
+	cout <<"unsigned long="<< sizeof(unsigned long)<<endl;
+	cout <<"long long="<< sizeof(long long)<<endl;
+	cout <<"unsigned long long="<< sizeof(unsigned long long)<<endl;
+	cout <<"float="<< sizeof(float)<<endl;*/
+
+
+	//cout << endl << endl << endl;
+
+
+	//int k,a,b,c;
+	//cout << "k=";
+	//cin >> k;
+	//a = k / 100;
+	//b = (k / 10) % 10;
+	//c = k % 10;
+	//cout << c << b << a<<endl;
+	//a = k / 100 + 12;
+	//b = (k / 10) % 10 + 6;
+	//c = k % 10 + 8;
+	//cout << a << b << c;
+	//
+
+	//int a, b, c, d;
+	//cout << "a=";
+	//cin >> a;
+	//cout << "b=";
+	//cin >> b;
+	//cout << "c=";
+	//cin >> c;
+	//cout << "d=";
+	//cin >> d;
+	//int r = sqrt((a - b)*(a-b) + (c - d)*(c-d));
+	//cout << r;
+
+
+	//double distance, fuel, pricePerLitre, timeInMinutes;
+	//cout << "distance=";
+	//cin >> distance;
+	//cout << endl << "fuel=";
+	//cin >> fuel;
+	//cout << endl << "pricePerLitre=";
+	//cin >> pricePerLitre;
+	//cout << endl << "timeInMitunes=";
+	//cin >> timeInMinutes; 
+	//cout<<endl;
+	//double averageExpense;
+	//averageExpense = (fuel / distance) * 100;
+	//cout << "averageExpense=" << averageExpense <<"L/100km"<< endl;
+	//double averageSpeed;
+	//double timeInHours;
+	//timeInHours = timeInMinutes / 60;
+	//averageSpeed = distance / timeInHours;
+	//cout << "averageSpeed=" << averageSpeed <<"km/H"<< endl;
+	//double tripPrice;
+	//tripPrice = averageExpense * distance*pricePerLitre/100;
+	//cout << "tripPrice=" << tripPrice <<"lv"<< endl<<endl<<endl;
+
+
+	/*int num1, num2;
+	cout << "num1=";
+	cin >> num1;
+	cout << "num2=";
+	cin >> num2;
+	if (num1 > num2) cout << num1;
+	else cout << num2;
+	cout << endl;
+	if (num2%num1 == 0) cout << "num1 e delitel na num2";
+	else cout << "num1 ne e delitel na num2";*/
+
+	/*int a;
+	cout << "a=";
+	cin >> a;
+	if (a % 3 == 0 && a % 6 != 0) cout << "yes";
+	else cout << "no";
+	cout << endl;
+	if (a / 1000 != a % 10 || a / 100 % 10 != a / 10 % 10) cout << "NE";
+	else cout << "DA";
+	cout << endl;
+	if (a / 100 > a % 100) cout << "da";
+	else cout << "ne";*/
+
+
+	
+	/*int x, y;
+	cout << "x=";
+	cin >> x;
+	cout << "y=";
+	cin >> y;
+	if (x > 0 && y > 0) cout << "first";
+	if (x < 0 && y > 0) cout << "second";
+	if (x < 0 && y < 0) cout << "third";
+	if (x > 0 && y < 0) cout << "forth";
+	if (x == 0) cout << "leji na osta X";
+	if (y == 0) cout << "leji na osta Y";*/
+
+	
+	/*int x1=3, y1=5, x2, y2;
+	cout << "x2=";
+	cin >> x2;
+	cout << "y2=";
+	cin >> y2;
+	int distance = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
+	if (distance < 7) cout << "IN";
+	else cout << "OUT";*/
+
+
+	/*double x1 = 0, y1 = 0, x2, y2;
+	cout << "x2=";
+	cin >> x2;
+	cout << "y2=";
+	cin >> y2;
+	double distance = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
+	if (distance > 6 && distance < 10) cout << "IN";
+	if (distance == 6) cout << "leji na kontura na malkata okrujnost";
+	if (distance == 10) cout << "leji na kontura na golqmata okrujnost";
+	if (distance < 6) cout << "tochkata leji w malkata okrujnost";
+	if (distance > 10) cout << "OUT";*/
+
+
+	/*double money;
+	cout << "money=";
+	cin >> money;
+	char cur;
+	cin >> cur;
+	char cur2;
+	cin >> cur2;
+	if (cur == 'L' && cur2 == 'D')
+	{
+		money = money * 0.60;
+		cout << money;
+	}
+	if (cur == 'L' && cur2 == 'E')
+	{
+		money = money * 0.51;
+		cout << money;
+	}
+	if (cur == 'L' && cur2 == 'P')
+	{
+		money = money * 0.45;
+		cout << money;
+	}
+	if (cur == 'E' && cur2 == 'L')
+	{
+		money = money * 1.96;
+		cout << money;
+	}
+	if (cur == 'E' && cur2 == 'D')
+	{
+		money = money * 1.18;
+		cout << money;
+	}
+	if (cur == 'E' && cur2 == 'P')
+	{
+		money = money * 0.89;
+		cout << money;
+	}
+	if (cur == 'D' && cur2 == 'L')
+	{
+		money = money * 1.66;
+		cout << money;
+	}
+	if (cur == 'D' && cur2 == 'E')
+	{
+		money = money * 0.85;
+		cout << money;
+	}
+	if (cur == 'D' && cur2 == 'P')
+	{
+		money = money * 0.75;
+		cout << money;
+	}
+	if (cur == 'P' && cur2 == 'L')
+	{
+		money = money * 2.20;
+		cout << money;
+	}
+	if (cur == 'P' && cur2 == 'E')
+	{
+		money = money * 1.13;
+		cout << money;
+	}
+	if (cur == 'P' && cur2 == 'D')
+	{
+		money = money * 1.33;
+		cout << money;
+	}*/    
+}
