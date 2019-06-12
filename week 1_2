@@ -5,28 +5,34 @@ using namespace std;
 
 int main()
 {
-	//int c;
-	//double f;
-	//cout << "c=";
-	//cin >> c;
-	//f = c * 1.8 + 32;
-	//cout << "f=" << f << endl << endl << endl;
+	//From C to F
+	
+	int c;
+	double f;
+	cout << "c=";
+	cin >> c;
+	f = c * 1.8 + 32;
+	cout << "f=" << f << endl << endl << endl;
 
+	//From F to C
+	
+	double c, f;
+	cout << "f=";
+	cin >> f;
+	c = (f - 32) / 1.8;
+	cout << "c=" << c << endl << endl << endl;
+	
+	//From C to K
+	
+	double ce, k;
+	cout << "ce=";
+	cin >> ce;
+	k = ce + 273.15;
+	cout << "k=" << k << endl << endl << endl;
 
-	//double c, f;
-	//cout << "f=";
-	//cin >> f;
-	//c = (f - 32) / 1.8;
-	//cout << "c=" << c << endl << endl << endl;
-
-	//double ce, k;
-	//cout << "ce=";
-	//cin >> ce;
-	//k = ce + 273.15;
-	//cout << "k=" << k << endl << endl << endl;
-
-
-	/*cout <<"int="<< sizeof(int)<<endl;
+	//Types' sizeof 
+	
+	cout <<"int="<< sizeof(int)<<endl;
 	cout <<"long int="<< sizeof(long int)<<endl;
 	cout <<"long long int="<< sizeof(long long int)<<endl;
 	cout <<"double="<< sizeof(double)<<endl;
@@ -38,62 +44,66 @@ int main()
 	cout <<"unsigned long="<< sizeof(unsigned long)<<endl;
 	cout <<"long long="<< sizeof(long long)<<endl;
 	cout <<"unsigned long long="<< sizeof(unsigned long long)<<endl;
-	cout <<"float="<< sizeof(float)<<endl;*/
+	cout <<"float="<< sizeof(float)<<endl;
 
 
-	//cout << endl << endl << endl;
+	cout << endl << endl << endl;
 
+	//% and / 
+	
+	int k,a,b,c;
+	cout << "k=";
+	cin >> k;
+	a = k / 100;
+	b = (k / 10) % 10;
+	c = k % 10;
+	cout << c << b << a<<endl;
+	a = k / 100 + 12;
+	b = (k / 10) % 10 + 6;
+	c = k % 10 + 8;
+	cout << a << b << c;
+	
+	//Distance
+	
+	int a, b, c, d;
+	cout << "a=";
+	cin >> a;
+	cout << "b=";
+	cin >> b;
+	cout << "c=";
+	cin >> c;
+	cout << "d=";
+	cin >> d;
+	int r = sqrt((a - b)*(a-b) + (c - d)*(c-d));
+	cout << r;
 
-	//int k,a,b,c;
-	//cout << "k=";
-	//cin >> k;
-	//a = k / 100;
-	//b = (k / 10) % 10;
-	//c = k % 10;
-	//cout << c << b << a<<endl;
-	//a = k / 100 + 12;
-	//b = (k / 10) % 10 + 6;
-	//c = k % 10 + 8;
-	//cout << a << b << c;
-	//
+	//Trip price
+	
+	double distance, fuel, pricePerLitre, timeInMinutes;
+	cout << "distance=";
+	cin >> distance;
+	cout << endl << "fuel=";
+	cin >> fuel;
+	cout << endl << "pricePerLitre=";
+	cin >> pricePerLitre;
+	cout << endl << "timeInMitunes=";
+	cin >> timeInMinutes; 
+	cout<<endl;
+	double averageExpense;
+	averageExpense = (fuel / distance) * 100;
+	cout << "averageExpense=" << averageExpense <<"L/100km"<< endl;
+	double averageSpeed;
+	double timeInHours;
+	timeInHours = timeInMinutes / 60;
+	averageSpeed = distance / timeInHours;
+	cout << "averageSpeed=" << averageSpeed <<"km/H"<< endl;
+	double tripPrice;
+	tripPrice = averageExpense * distance*pricePerLitre/100;
+	cout << "tripPrice=" << tripPrice <<"lv"<< endl<<endl<<endl;
 
-	//int a, b, c, d;
-	//cout << "a=";
-	//cin >> a;
-	//cout << "b=";
-	//cin >> b;
-	//cout << "c=";
-	//cin >> c;
-	//cout << "d=";
-	//cin >> d;
-	//int r = sqrt((a - b)*(a-b) + (c - d)*(c-d));
-	//cout << r;
-
-
-	//double distance, fuel, pricePerLitre, timeInMinutes;
-	//cout << "distance=";
-	//cin >> distance;
-	//cout << endl << "fuel=";
-	//cin >> fuel;
-	//cout << endl << "pricePerLitre=";
-	//cin >> pricePerLitre;
-	//cout << endl << "timeInMitunes=";
-	//cin >> timeInMinutes; 
-	//cout<<endl;
-	//double averageExpense;
-	//averageExpense = (fuel / distance) * 100;
-	//cout << "averageExpense=" << averageExpense <<"L/100km"<< endl;
-	//double averageSpeed;
-	//double timeInHours;
-	//timeInHours = timeInMinutes / 60;
-	//averageSpeed = distance / timeInHours;
-	//cout << "averageSpeed=" << averageSpeed <<"km/H"<< endl;
-	//double tripPrice;
-	//tripPrice = averageExpense * distance*pricePerLitre/100;
-	//cout << "tripPrice=" << tripPrice <<"lv"<< endl<<endl<<endl;
-
-
-	/*int num1, num2;
+	//Delitel
+	
+	int num1, num2;
 	cout << "num1=";
 	cin >> num1;
 	cout << "num2=";
@@ -102,9 +112,11 @@ int main()
 	else cout << num2;
 	cout << endl;
 	if (num2%num1 == 0) cout << "num1 e delitel na num2";
-	else cout << "num1 ne e delitel na num2";*/
-
-	/*int a;
+	else cout << "num1 ne e delitel na num2";
+	
+	//Excercise
+	
+	int a;
 	cout << "a=";
 	cin >> a;
 	if (a % 3 == 0 && a % 6 != 0) cout << "yes";
@@ -114,11 +126,11 @@ int main()
 	else cout << "DA";
 	cout << endl;
 	if (a / 100 > a % 100) cout << "da";
-	else cout << "ne";*/
+	else cout << "ne";
 
-
+	//Place of a point
 	
-	/*int x, y;
+	int x, y;
 	cout << "x=";
 	cin >> x;
 	cout << "y=";
@@ -128,20 +140,22 @@ int main()
 	if (x < 0 && y < 0) cout << "third";
 	if (x > 0 && y < 0) cout << "forth";
 	if (x == 0) cout << "leji na osta X";
-	if (y == 0) cout << "leji na osta Y";*/
+	if (y == 0) cout << "leji na osta Y";
 
+	//Place of a point
 	
-	/*int x1=3, y1=5, x2, y2;
+	int x1=3, y1=5, x2, y2;
 	cout << "x2=";
 	cin >> x2;
 	cout << "y2=";
 	cin >> y2;
 	int distance = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
 	if (distance < 7) cout << "IN";
-	else cout << "OUT";*/
+	else cout << "OUT";
 
+	//Place of a point
 
-	/*double x1 = 0, y1 = 0, x2, y2;
+	double x1 = 0, y1 = 0, x2, y2;
 	cout << "x2=";
 	cin >> x2;
 	cout << "y2=";
@@ -151,10 +165,11 @@ int main()
 	if (distance == 6) cout << "leji na kontura na malkata okrujnost";
 	if (distance == 10) cout << "leji na kontura na golqmata okrujnost";
 	if (distance < 6) cout << "tochkata leji w malkata okrujnost";
-	if (distance > 10) cout << "OUT";*/
+	if (distance > 10) cout << "OUT";
 
-
-	/*double money;
+	//Money converter
+	
+	double money;
 	cout << "money=";
 	cin >> money;
 	char cur;
@@ -220,5 +235,5 @@ int main()
 	{
 		money = money * 1.33;
 		cout << money;
-	}*/    
+	}
 }
